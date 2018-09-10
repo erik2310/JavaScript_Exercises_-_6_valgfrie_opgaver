@@ -13,3 +13,5 @@ function reverseArray(array) {
 }
 
 reverseArray(["A", "B", "C"])
+
+// Mangler funktionen reverseArrayInPlace
