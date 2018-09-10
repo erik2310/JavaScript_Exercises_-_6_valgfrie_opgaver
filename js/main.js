@@ -1,5 +1,6 @@
 
 console.log("Reversing an array:");
+console.log("");
 
 function reverseArray(array) {
     let newArray = [];
