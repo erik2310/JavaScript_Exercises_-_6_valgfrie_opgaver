@@ -17,11 +17,41 @@ function reverseArray(array) {
         newArray.push(array[i]);
     }
     
-    // Udskriver newArray items
-    console.log(newArray);
+    // Returnere newArray
+    return newArray;
+    
 }
 
-// Kalder på reverseArray funktionen
-reverseArray(["A", "B", "C"])
+// Kalder på reverseArray funktionen og udskriver den
+console.log(reverseArray(["A", "B", "C"]));
 
-// Mangler funktionen reverseArrayInPlace
+
+// En funktion til at vende om på en array
+function reverseArrayInPlace(array) {
+    
+    // Deklarer en ny array som er tom
+    let newArray = [];
+    
+    // Henter antallet af items i et array og minusser med 1 for at få det præcise tal og gemmer det i numberOfItemsInArray
+    let numberOfItemsInArray = array.length - 1;
+
+    // Lægger alle items fra array til newArray
+    for (let i = 0; i <= numberOfItemsInArray; i++) {
+        newArray[i] = array[i];
+    }
+    
+    for (let i = numberOfItemsInArray, o = 0; 0 <= i; i--, o++) {
+        // Lægger den sidste item fra newArray til det første item i array ved hver iteration
+        array[o] = newArray[i];
+    }
+    
+}
+
+// Initialisere en array med items
+let arrayValue = [1, 2, 3, 4, 5];
+
+// Kalder på reverseArrayInPlace funktionen med arrayValue som argument
+reverseArrayInPlace(arrayValue);
+
+// Udskriver arrayValue
+console.log(arrayValue);
