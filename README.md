@@ -1,2 +1,2 @@
-# JavaScript Exercises Chapter 4
-JavaScript Exercises from Eloquent JavaScript Chapter 4.
+# JavaScript Exercises - 6 valgfrie opgaver
+6 valgfrie opgaver fra Eloquent JavaScript.
